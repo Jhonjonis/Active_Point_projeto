@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size
+        android:width="80dp"
+        android:height="80dp" />
+    <corners android:radius="50dp" /> <!-- Raio do círculo -->
+    <solid android:color="@android:color/transparent" /> <!-- Centro transparente -->
+    <stroke
+        android:width="4dp"
+        android:color="@color/azul_medio"/>
+    <!-- Largura da borda -->
+    <!-- Cor da borda -->
+
+</shape>

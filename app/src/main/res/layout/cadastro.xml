@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/azul_suave">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/azul_suave">
+
+    <ImageView
+        android:id="@+id/logoC"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/logoo"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/azul_medio"/>
+
+    <EditText
+        android:id="@+id/edtTextNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="350dp"
+        android:inputType="text"
+        android:hint="Insira seu nome completo"
+        android:textColor="@color/azul_medio"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColorHint="@color/azul_medio"
+        android:backgroundTint="@color/azul_medio"/>
+
+    <EditText
+        android:id="@+id/edtTxtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:minWidth="350dp"
+        android:textColor="@color/azul_medio"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Insira um Email"
+        android:textColorHint="@color/azul_medio"
+        android:backgroundTint="@color/azul_medio"/>
+
+    <EditText
+        android:id="@+id/cpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="350dp"
+        android:textColor="@color/azul_medio"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Insira seu CPF"
+        android:textColorHint="@color/azul_medio"
+        android:backgroundTint="@color/azul_medio"/>
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="350dp"
+        android:textColor="@color/azul_medio"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Insira uma Senha"
+        android:textColorHint="@color/azul_medio"
+        android:backgroundTint="@color/azul_medio"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="350dp"
+        android:textColor="@color/azul_medio"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Insira um número de telefone"
+        android:textColorHint="@color/azul_medio"
+        android:backgroundTint="@color/azul_medio"
+        android:inputType="phone" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radioOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sou usuário"
+            android:textColor="@color/azul_medio"
+            />
+
+        <RadioButton
+            android:id="@+id/radioOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sou Loja"
+            android:textColor="@color/azul_medio"/>
+
+    </RadioGroup>
+
+    <!-- Campo CNPJ - Inicialmente invisível -->
+    <EditText
+        android:id="@+id/cnpj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="350dp"
+        android:inputType="text"
+        android:hint="Insira o CNPJ"
+        android:visibility="gone"
+        android:textColor="@color/azul_medio"
+        android:textColorHint="@color/azul_medio"
+        android:backgroundTint="@color/azul_medio"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/nomeloja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="350dp"
+        android:inputType="text"
+        android:hint="Insira o Nome da loja"
+        android:visibility="gone"
+        android:textColor="@color/azul_medio"
+        android:textColorHint="@color/azul_medio"
+        android:backgroundTint="@color/azul_medio"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="350dp"
+        android:hint="Local"
+        android:textColor="@color/azul_medio"
+        android:textColorHint="@color/azul_medio"
+        android:backgroundTint="@color/azul_medio"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/cadastar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cadastar"
+        android:layout_gravity="center"
+        android:minWidth="170dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/azul_medio"
+        android:textColor="@color/branco"/>
+
+    <Button
+        android:id="@+id/fazerLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer Login"
+        android:layout_gravity="center"
+        android:minWidth="170dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/azul_medio"
+        android:textColor="@color/branco"/>
+
+
+
+</LinearLayout>
+</ScrollView>

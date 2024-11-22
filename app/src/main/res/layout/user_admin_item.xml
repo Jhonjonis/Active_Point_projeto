@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/admin_layout"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/branco"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="18sp"
+            android:textColor="@color/branco"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            tools:text="Img"
+            />
+
+        <TextView
+            android:id="@+id/nome1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/img"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            tools:text="Nome: Jonis vitor Ferreira silva" />
+
+        <TextView
+            android:id="@+id/cpf1"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nome1"
+            android:layout_alignStart="@id/nome1"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            tools:text="CPF: 738.034.455-45" />
+
+        <TextView
+            android:id="@+id/numero1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cpf1"
+            android:layout_alignStart="@id/nome1"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginEnd="24dp"
+            tools:text="Número: 8198368-8473" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

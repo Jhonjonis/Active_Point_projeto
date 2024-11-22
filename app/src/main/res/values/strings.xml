@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Active Point</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="title_activity_comun_layout">ComunLayout</string>
+    <string name="menu_title">Active Point</string>
+</resources>

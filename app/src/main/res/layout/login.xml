@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_suave">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/logoo" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Active Point"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/azul_medio"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:id="@+id/saudacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bem Vindo!"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/azul_medio"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:hint="@string/email"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/azul_medio"
+        android:textColorHint="@color/azul_medio"
+        android:backgroundTint="@color/azul_medio"/>
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:layout_gravity="center"
+        android:hint="@string/senha"
+        android:textColor="@color/azul_medio"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/azul_medio"
+        android:backgroundTint="@color/azul_medio"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:layout_gravity="center"
+        android:minWidth="170dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/azul_medio"
+        android:textColor="@color/branco"/>
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:layout_gravity="center"
+        android:minWidth="170dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/azul_medio"
+        android:textColor="@color/branco"/>
+</LinearLayout>

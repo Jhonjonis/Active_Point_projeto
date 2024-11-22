@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_suave">
+
+
+
+
+    <!-- Imagem -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/local_exp"
+        app:layout_constraintEnd_toStartOf="@+id/Nome_us"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <!-- Nome do usuário -->
+    <TextView
+        android:id="@+id/Nome_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Marciel Antônio"
+        android:textColor="@color/preto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- CPF do usuário -->
+    <TextView
+        android:id="@+id/cpf_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="138.654.540-86"
+        android:textColor="@color/preto"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/Nome_us"
+        app:layout_constraintTop_toBottomOf="@+id/Nome_us" />
+
+    <!-- Número do usuário -->
+    <TextView
+        android:id="@+id/numero_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="(81) 99645-1402"
+        android:textSize="15sp"
+        android:textColor="@color/preto"
+        app:layout_constraintStart_toStartOf="@+id/cpf_us"
+        app:layout_constraintTop_toBottomOf="@+id/cpf_us" />
+
+    <!-- Local do expediente -->
+    <TextView
+        android:id="@+id/local_exp"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/azul_medio"
+        android:gravity="center"
+        android:text="Local do Expediente atual:"
+        android:textColor="@color/branco"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero_us" />
+
+    <!-- Loja -->
+    <TextView
+        android:id="@+id/loja"
+        android:layout_width="74dp"
+        android:layout_height="34dp"
+        android:background="@color/branco"
+        android:gravity="center"
+        android:text="Loja:"
+        android:textColor="@color/cinza_escuro"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/local_exp" />
+
+    <!-- Nome da loja -->
+    <TextView
+        android:id="@+id/nome_lj"
+        android:layout_width="336dp"
+        android:layout_height="34dp"
+        android:background="@color/branco"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/cinza_escuro"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loja"
+        app:layout_constraintTop_toTopOf="@+id/loja" />
+
+    <!-- Local -->
+    <TextView
+        android:id="@+id/local"
+        android:layout_width="74dp"
+        android:layout_height="34dp"
+        android:background="@color/branco"
+        android:gravity="center"
+        android:text="Local:"
+        android:textColor="@color/cinza_escuro"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loja" />
+
+    <!-- Nome do local -->
+    <TextView
+        android:id="@+id/nome_local"
+        android:layout_width="336dp"
+        android:layout_height="34dp"
+        android:background="@color/branco"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/cinza_escuro"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/local"
+        app:layout_constraintTop_toTopOf="@+id/local" />
+
+    <!-- Lojas disponíveis -->
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:background="@color/azul_medio"
+        android:gravity="center"
+        android:text="Lojas disponíveis para cadastro:"
+        android:textColor="@color/branco"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_local" />
+
+    <!-- RecyclerView -->
+
+    <!-- Navbar -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="412dp"
+        android:layout_height="499dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/navbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:listitem="@layout/comun_list_view" />
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/azul_medio"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/edt_perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Editar Perfil"
+            android:textSize="10dp"
+            android:textColor="@color/branco"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/demosntrativo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Demonstrativo"
+            android:textSize="10dp"
+            android:textColor="@color/branco"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/cadastros"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cadastros"
+            android:textSize="10dp"
+            android:textColor="@color/branco"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
